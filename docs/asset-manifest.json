@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.87840308.css",
-    "main.js": "/static/js/main.990cb94e.js",
+    "main.css": "/static/css/main.79a3ec38.css",
+    "main.js": "/static/js/main.1685fa36.js",
     "static/js/453.e354d7cd.chunk.js": "/static/js/453.e354d7cd.chunk.js",
+    "static/media/church_entrance.jpg": "/static/media/church_entrance.e3fef88d4443bf5d8e6e.jpg",
+    "static/media/nawoori_logo.png": "/static/media/nawoori_logo.d581d69541762505efd0.png",
     "index.html": "/index.html",
-    "main.87840308.css.map": "/static/css/main.87840308.css.map",
-    "main.990cb94e.js.map": "/static/js/main.990cb94e.js.map",
+    "main.79a3ec38.css.map": "/static/css/main.79a3ec38.css.map",
+    "main.1685fa36.js.map": "/static/js/main.1685fa36.js.map",
     "453.e354d7cd.chunk.js.map": "/static/js/453.e354d7cd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.87840308.css",
-    "static/js/main.990cb94e.js"
+    "static/css/main.79a3ec38.css",
+    "static/js/main.1685fa36.js"
   ]
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import './ChurchIntro.css'
+import churchEntrance from '../images/church_entrance.jpg'
 
 const HISTORY = [
   { year: '2005', event: '나우리교회 설립', detail: '소수의 성도들과 함께 첫 예배를 드리며 교회를 세웠습니다.' },
@@ -21,12 +22,15 @@ const ChurchIntro: React.FC = () => {
         <div className="container">
           {/* Photo placeholder */}
           <div className="photo-placeholder">
-            <span>교회 사진</span>
+            <img
+              src={churchEntrance}
+              alt="나우리교회 전경"
+              className="church-photo"
+            />
           </div>
-
           <div className="intro-header">
             <h2 className="church-name-large">나우리교회</h2>
-            <p className="church-name-en">Nauri Church</p>
+            <p className="church-name-en">Nawoori Church</p>
           </div>
 
           <div className="cross-divider"><span>✛</span></div>
@@ -51,19 +55,19 @@ const ChurchIntro: React.FC = () => {
               <dl className="info-table">
                 <div className="info-row">
                   <dt>설립일</dt>
-                  <dd>2005년 3월 첫째 주일</dd>
+                  <dd>????년 ?월 첫째 주일</dd>
                 </div>
                 <div className="info-row">
                   <dt>담임목사</dt>
-                  <dd>홍길동 목사</dd>
+                  <dd>방진석 목사</dd>
                 </div>
                 <div className="info-row">
                   <dt>주일예배</dt>
-                  <dd>1부 09:00 / 2부 11:00</dd>
+                  <dd>1부 09:00 / 2부 11:00 / 3부 14:00</dd>
                 </div>
                 <div className="info-row">
                   <dt>주소</dt>
-                  <dd>서울특별시 OO구 OO로 000</dd>
+                  <dd>서울특별시 강남구 언주로30길 27 (도곡동, 우성리빙텔 406호)</dd>
                 </div>
                 <div className="info-row">
                   <dt>연락처</dt>

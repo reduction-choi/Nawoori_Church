@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import './Navbar.css'
+import nawooriLogo from '../images/nawoori_logo.png'
 
 interface DropdownItem {
   label: string
@@ -19,7 +20,7 @@ const NAV_ITEMS: NavItem[] = [
     label: '교회 소식',
     dropdown: [
       { label: '공지사항', to: '/교회-소식/공지사항' },
-      { label: '칼럼',    to: '/교회-소식/칼럼' },
+      { label: '칼럼', to: '/교회-소식/칼럼' },
     ],
   },
   {
@@ -27,7 +28,7 @@ const NAV_ITEMS: NavItem[] = [
     dropdown: [
       { label: '담임목사', to: '/함께하는-이들/담임목사' },
       { label: '역대 목사', to: '/함께하는-이들/역대-목사' },
-      { label: '사역자',   to: '/함께하는-이들/사역자' },
+      { label: '사역자', to: '/함께하는-이들/사역자' },
     ],
   },
   { label: 'Contact', to: '/contact' },
@@ -62,8 +63,11 @@ const Navbar: React.FC = () => {
       <div className="navbar-inner">
         {/* Logo */}
         <Link to="/" className="navbar-logo">
-          <div className="logo-mark">✛</div>
-          <span className="logo-text">나우리교회</span>
+          <img
+            src={nawooriLogo}
+            alt="나우리교회 로고"
+            className="navbar-logo-image"
+          />
         </Link>
 
         {/* Desktop menu */}
@@ -84,11 +88,10 @@ const Navbar: React.FC = () => {
                 </Link>
               ) : (
                 <button
-                  className={`nav-link nav-link-btn ${
-                    item.dropdown?.some((d) => location.pathname.startsWith(d.to.split('/')[1] ? '/' + d.to.split('/')[1] : ''))
+                  className={`nav-link nav-link-btn ${item.dropdown?.some((d) => location.pathname.startsWith(d.to.split('/')[1] ? '/' + d.to.split('/')[1] : ''))
                       ? 'active'
                       : ''
-                  }`}
+                    }`}
                   aria-haspopup="true"
                   aria-expanded={openMenu === item.label}
                 >
