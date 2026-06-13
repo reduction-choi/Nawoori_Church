@@ -1,0 +1,14 @@
+/* Add to global.css or a shared CSS — person card photo placeholder */
+.person-card-photo {
+  width: 100%;
+  height: 180px;
+  background: var(--color-sage);
+  border: 1.5px dashed var(--color-border);
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  font-size: 0.82rem;
+  margin-bottom: 16px;
+}

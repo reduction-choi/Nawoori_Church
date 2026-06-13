@@ -1,5 +1,5 @@
 import React from 'react'
-//import './ChurchIntro.css'
+import './ChurchIntro.css'
 
 const HISTORY = [
   { year: '2005', event: '나우리교회 설립', detail: '소수의 성도들과 함께 첫 예배를 드리며 교회를 세웠습니다.' },

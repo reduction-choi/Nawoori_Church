@@ -1,0 +1,108 @@
+.pastor-layout {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.pastor-photo-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.pastor-photo-placeholder {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: var(--color-sage);
+  border: 2px dashed var(--color-border);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.pastor-name-card {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 24px;
+  border-radius: 0 0 var(--radius-md) var(--radius-md);
+  text-align: center;
+}
+
+.pastor-title-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-accent-lt);
+  margin-bottom: 6px;
+}
+
+.pastor-name {
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 12px;
+}
+
+.pastor-verse {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.65);
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.pastor-bio {
+  font-size: 0.95rem;
+  color: var(--color-text-mid);
+  line-height: 1.85;
+}
+
+.intro-section-heading {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.career-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.career-item {
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+}
+
+.career-year {
+  flex-shrink: 0;
+  width: 44px;
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-accent);
+}
+
+.career-desc {
+  font-size: 0.9rem;
+  color: var(--color-text-mid);
+}
+
+@media (max-width: 768px) {
+  .pastor-layout {
+    grid-template-columns: 1fr;
+  }
+  .pastor-photo-wrap {
+    max-width: 280px;
+    margin: 0 auto;
+  }
+}
